@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <!-- 设置没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--滚动条-->
+        <item name="android:scrollbars">none</item>
+        <!--界面过拉阴影问题-->
+        <item name="android:overScrollMode">never</item>
+        <!--等宽字体-->
+        <item name="android:typeface">monospace</item>
+        <!--横屏-->
+        <item name="android:screenOrientation">portrait</item>
+
+    </style>
+
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/right_out</item>
+    </style>
+
+    <!--Dialog弹框的style-->
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+</resources>
